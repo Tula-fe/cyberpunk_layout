@@ -2,6 +2,10 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1920px;
+}
+
 *,
 *::before,
 *::after {
@@ -44,7 +48,7 @@ button {
 }
 
 @font-face {
-    font-family: 'RobotoBold';
+    font-family: 'Roboto';
     src: local('Roboto Bold'), local('Roboto-Bold'),
         url('/fonts/RobotoBold.woff2') format('woff2'),
         url('/fonts/RobotoBold.woff') format('woff');
@@ -53,7 +57,7 @@ button {
 }
 
 @font-face {
-    font-family: 'RobotoRegular';
+    font-family: 'Roboto';
     src: local('Roboto'), local('Roboto-Regular'),
         url('/fonts/RobotoRegular.woff') format('woff'),
         url('/fonts/RobotoRegular.woff') format('woff');
@@ -62,7 +66,7 @@ button {
 }
 
 @font-face {
-    font-family: 'RobotoLight';
+    font-family: 'Roboto';
     src: local('Roboto Light'), local('Roboto-Light'),
         url('/fonts/RobotoLight.woff2') format('woff2'),
         url('/fonts/RobotoLight.woff') format('woff');
@@ -244,6 +248,7 @@ button {
     font-style: normal;
     font-weight: 400;
     line-height: 34px;
+    margin-bottom: 25px;
 }
 
 .action__descr__outline {
@@ -255,8 +260,177 @@ button {
     line-height: 34px;
 }
 
-.st {
+.action__wrapper {
     display: flex;
-    flex-direction: column;
-    max-width: 460px;
+    padding-bottom: 70px;
+}
+
+.plug {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 32px;
+    min-height: 456px;
+    min-width: 460px;
+    outline: 3px solid red;
+}
+
+.plug__text {
+    color: red;
+
+}
+
+.action__image {
+    min-height: 456px;
+    min-width: 460px;
+}
+
+.action__image:not(:last-child) {
+    margin-right: -132px;
+}
+
+.action__image_xbox {
+    z-index: 100;
+    background-image: url(/img/section2/action_image1.png);
+}
+
+.action__image_ps {
+    background-image: url(/img/section2/action_image2.png);
+}
+
+.action__transition {
+    margin-left: -320px;
+    min-width: 1920px;
+    min-height: 70px;
+    background-image: url(/img/section2/tarnsition_by.png);
+}
+
+/* ---------- hp ----------*/
+
+.hp {
+    padding-top: 70px;
+    background-color: #F8F200;
+    padding-bottom: 70px;
+}
+
+.hp__container {
+    margin-left: 320px;
+}
+
+.hp__wrapper {
+    display: flex;
+}
+
+.hp__rightBlock {
+    max-width: 624px;
+    margin-right: 32px;
+}
+
+.hp__image {
+    min-width: 624px;
+    min-height: 430px;
+    background-image: url(/img/section3/hp_image2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 26px;
+}
+
+.hp__logoWrapper {
+    margin-left: 42px;
+}
+
+.hp__logo {
+    display: inline-block;
+    min-height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hp__logo:not(:last-child) {
+    margin-right: 25px;
+}
+
+.hp__logo_hp {
+    min-width: 80px;
+    background-image: url(/img/section3/hp_logo.svg);
+    
+}
+
+.hp__logo_cross {
+    min-width: 90px;
+    background-image: url(/img/section3/cross.svg);
+}
+
+.hp__logo_cyberpunk {
+    min-width: 321px;
+    background-image: url(/img/section3/hp_cyberpunk_logo.png);
+}
+
+.hp__leftBlock {
+    max-width: 624px;
+}
+
+.hp__title {
+    color: #000;
+    font-family: Archangelsk;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.hp__descr {
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    margin-bottom: 25px;
+}
+
+.hp__list {
+    margin-bottom: 40px;
+}
+
+.hp__item {
+    min-height: 32px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 42px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.hp__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.hp__item_first {
+    background-image: url(/img/section3/color_lens.png);
+}
+
+.hp__item_second {
+    background-image: url(/img/section3/auto_awesome.png);
+}
+
+.hp__item_third {
+    background-image: url(/img/section3/auto_awesome_motion.png);
+}
+
+.hp__button {
+    color: #F8F200;
+    background-color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 15px 50px;
+    border: none;
 }

@@ -7,9 +7,10 @@
     <!-- Подключение стилей-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
+
 <body>
+
     <header class="header">
         <div class="header__container">
             <div class="header__top">
@@ -35,7 +36,9 @@
             </div>
         </div>
     </header>
+
     <main>
+
         <section class="nightcity">
             <h2 class="nightcity__title">
                 Найт-Сити изменит тебя навсегда!
@@ -54,6 +57,7 @@
             </div>
             <div class="nightcity_transition"></div>
         </section>
+
         <section class="action">
             <div class="action__container">
                 <h2 class="action__title">
@@ -62,33 +66,59 @@
                 <p class="action__descr">
                     Играй в&nbsp;<span class="action__descr__outline">Cyberpunk 2077</span> и&nbsp;получи возможность выиграть консоль Xbox Series X&nbsp;или Sony PlayStation 5! Заполни форму ниже и&nbsp;приложи скриншот о&nbsp;покупке игры. Итоги розыгрыша будут подведены 1&nbsp;февраля. Удачи! ;)
                 </p>
-                <form action="#" method="POST">
+                <!-- <form action="#" method="POST">
                 <div class="st">
                     <ul>
-                        <li><input type="text" id="username"></li>
-                        <li><input type="text" id="email"></li>
+                        <li><input class="someshit" type="text" id="username" placeholder="Как тебя зовут?"></li>
+                        <li><input type="text" id="email" placeholder="Твой e-mail"></li>
+                        <li><div>
+                            <label for="file">Прикрепить скриншот</label>
+                            <input type="file" name="screenshot" id="file">
+                        </div></li>
+                        <li><button>Отправить</button></li>
+                        <li><input type="checkbox" id="agreement"></li>
                     </ul>
-                </form>
+                </form>                          БУДУЩАЯ ФОРМА                             -->
+                <div class="action__wrapper">
+                    <div class="plug">
+                        <p class="plug__text">ЗДЕСЬ МОГЛА БЫ БЫТЬ ВАША ФОРМА</p>
+                    </div>
+                    <div class="action__image action__image_xbox"></div>
+                    <div class="action__image action__image_ps"></div>
+                </div>
+                <div class="action__transition"></div>
             </div>
         </section>
-        <section>
-            <img src="#" alt="">
-            <img src="#" alt="">
-            <img src="#" alt="">
-            <img src="#" alt="">
-            <h2>
-                Полное погружение вместе с&nbsp;HP
-            </h2>
-            <p>
-                Погрузись в&nbsp;современные экшен-игры с&nbsp;реалистичным изображением с&nbsp;помощью монитора с&nbsp;диагональю 23,8&nbsp;дюйма, созданном для отображения максимально насыщенных цветов. Успевай реагировать на&nbsp;любые события с&nbsp;временем отклика 1&nbsp;мс и&nbsp;частотой в&nbsp;144&nbsp;Гц!
-            </p>
-            <ul>
-                <li>Яркие насыщенные цвета</li>
-                <li>Кристальная четкость изображения</li>
-                <li>Быстрые движения и&nbsp;плавный геймплей</li>
-            </ul>
-            <button>Подробнее</button>
+
+        <section class="hp">
+            <div class="hp__container">
+                <div class="hp__wrapper">
+                    <div class="hp__rightBlock">
+                        <div class="hp__image"></div>
+                        <div class="hp__logoWrapper">
+                            <div class="hp__logo hp__logo_hp"></div>
+                            <div class="hp__logo hp__logo_cross"></div>
+                            <div class="hp__logo hp__logo_cyberpunk"></div>
+                        </div>
+                    </div>
+                    <div class="hp__leftBlock">
+                        <h2 class="hp__title">
+                            Полное погружение вместе с&nbsp;HP
+                        </h2>
+                        <p class="hp__descr">
+                            Погрузись в&nbsp;современные экшен-игры с&nbsp;реалистичным изображением с&nbsp;помощью монитора с&nbsp;диагональю 23,8&nbsp;дюйма, созданном для отображения максимально насыщенных цветов. Успевай реагировать на&nbsp;любые события с&nbsp;временем отклика 1&nbsp;мс и&nbsp;частотой в&nbsp;144&nbsp;Гц!
+                        </p>
+                        <ul class="hp__list">
+                            <li class="hp__item hp__item_first">Яркие насыщенные цвета</li>
+                            <li class="hp__item hp__item_second">Кристальная четкость изображения</li>
+                            <li class="hp__item hp__item_third">Быстрые движения и&nbsp;плавный геймплей</li>
+                        </ul>
+                        <button class="hp__button">Подробнее</button>
+                    </div>
+                </div>
+            </div>
         </section>
+
         <section>
             <div></div>
             <div>
@@ -114,7 +144,9 @@
                 </ul>
             </div>
         </section>
+
     </main>
+
     <footer>
         <div>
             <img src="#" alt="">
@@ -132,5 +164,6 @@
             </p>
         </div>
     </footer>
+
 </body>
 </html>
