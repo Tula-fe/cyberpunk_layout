@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    max-width: 1920px;
+    max-width: 1905px;
 }
 
 *,
@@ -203,7 +203,7 @@ button {
 
 .nightcity_transition {
     margin-left: -320px;
-    min-width: 1920px;
+    min-width: 1903px;
     min-height: 70px;
     background-image: url(/img/section1/transition_wb.png);
 }
@@ -300,7 +300,7 @@ button {
 
 .action__transition {
     margin-left: -320px;
-    min-width: 1920px;
+    min-width: 1903px;
     min-height: 70px;
     background-image: url(/img/section2/tarnsition_by.png);
 }
@@ -433,4 +433,131 @@ button {
     line-height: normal;
     padding: 15px 50px;
     border: none;
+}
+
+/* ---------- buying ---------- */
+
+.buying__container {
+    display: flex;
+    background-color: #000;
+}
+
+.buying__lefttBlock {
+    min-width: 944px;
+    min-height: 717px;
+    background-image: url(/img/section4/buy_image.png);
+}
+
+.buying__rightBlock {
+    padding-top: 70px;
+    padding-left: 32px;
+    background-color: #000;
+}
+
+.buying__title {
+    color: #FFF;
+    font-family: Archangelsk;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 624px;
+    margin-bottom: 25px;
+}
+
+.buying__subtitle {
+    color: #52BEDC;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.edition__list {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 42px;
+    min-height: 32px;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.edition__list:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.buying__edition {
+    margin-bottom: 70px;
+}
+
+.buying__wrapper:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.edition__list_first {
+    background-image: url(/img/section4/disk.png);
+}
+
+.edition__list_second {
+    background-image: url(/img/section4/wysiwyg.png);
+}
+
+.edition__list_third {
+    background-image: url(/img/section4/collections.png);
+}
+
+/* ---------- footer ---------- */
+
+.footer__background_white {
+    background-color: #FFF;
+}
+
+.footer__background_black {
+    background-color: #000;
+    padding: 13px 0;
+}
+
+.footer__container {
+    margin-left: 320px;
+    margin-right: 320px;
+}
+
+.footer__top {
+    padding: 13px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footer__link {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+}
+
+.footer__link:not(:last-child) {
+    margin-right: 32px;
+}
+
+.footer__bottom {
+    text-align: center;
+}
+
+.footer__descr {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0%;
 }
